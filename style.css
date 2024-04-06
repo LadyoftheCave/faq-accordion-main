@@ -1,0 +1,103 @@
+body {
+    background-color: hsl(275, 69%, 91%);;
+    font-family: "Work Sans", sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: hsl(292, 42%, 14%);
+
+}
+
+header {
+    display: flex;
+    gap: 1.5rem;
+}
+
+main {
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    display: grid;
+    place-items:center;
+    min-height: 100vh;
+}
+
+
+
+article {
+        block-size: auto;
+        inline-size: 19rem;
+}
+
+.accordion {
+    background-color: white;
+    /* inline-size: 30rem; */
+    /* block-size: auto; */
+    padding: .5rem 2rem 2rem 2rem;
+    border-radius: 15px;
+}
+
+.accordion h1 {
+    font-size: 3rem;
+}
+
+.vraag1, .vraag2, .vraag3, .vraag4 {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+.vraag1:hover, .vraag2:hover, .vraag3:hover, .vraag4:hover {
+    color: hsl(292, 16%, 49%);
+}
+
+
+
+.vraag p {
+    font-weight: 600;
+
+
+}
+
+main p.answer1, 
+main p.answer2, 
+main p.answer3, 
+main p.answer4 {
+
+    font-weight: 400;
+    opacity: 0.5;
+    font-size: .9rem;
+    letter-spacing: 0.01rem;
+    line-height: 1.4rem;
+    display: none;
+    position: relative;
+
+}
+
+/* main p.answer1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    background-color: rgb(192, 190, 190); 
+    margin-top: 1rem; 
+} */
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(211, 209, 209); 
+    margin-top: 10px; 
+    border: none;
+    /* opacity: 0.5; */
+  }
+
+
+@media screen and (min-width: 1400px) {
+
+    article {
+        block-size: auto;
+        inline-size: 31rem;
+    }
+    .accordion {
+        inline-size: 100%;
+    }
+}
